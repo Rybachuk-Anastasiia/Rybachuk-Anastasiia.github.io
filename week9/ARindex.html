@@ -1,0 +1,34 @@
+﻿<html>
+ <script src="../aframe/aframe.min.js"></script>
+ <script src="../ar/aframe.ar.js"></script>
+
+ <a-scene embedded arjs>
+ 	<a-assets>
+					    <img id="sky" src="../assets/360-panorama-matador-seo.jpg">
+					    <img id="plant" src="../assets/plants.jpg">
+					    <video id="tsunami" autoplay loop="true" src="../assets/movie2.mp4"> </video>
+					      <!-- <a-asset-item id="tree" src="..assets/tree/scene.gltf"></a-asset-item>    
+					       <a-asset-item id="tree2" src="..assets/tree.glb"></a-asset-item> --> 
+					       <a-asset-item id="tree3" src="..assets/fur_tree.glb"></a-asset-item>
+
+					 	</a-assets>
+         <!--<a-sky src="#sky"></a-sky>-->
+            <a-torus position="-2 1 -5" color="green" radius="1.2" src="../assets/HIRO.jpg"></a-torus> 
+  			<!--<a-videosphere src="#tsunami.mp4"></a-videosphere>-->	
+  			<a-video src="#tsunami" width="16" height="9" position="0 5 -20"></a-video>
+  			 <!-- <a-gltf-model src="#tree"  position="2 5-3"></a-gltf-model>	 
+  			    <a-gltf-model src="#tree2"  position="0.5 -1" scale="5 5 5"></a-gltf-model>-->
+  			     <a-gltf-model src="#tree3"  position="0.5 -1" scale="1 1 1"></a-gltf-model>
+
+  			     <a-nft type="nft" url=../week8/0022.jpg>
+  			    <a-entity light="color: #AFA; intensity: 1.5" position="-1 1 0"></a-entity>
+            <a-plane width="7" height="7" rotation="50 0 0" position="-2 -2 -5" color="purple"></a-plane>
+            <a-cylinder color="yellow" height="2" radius="0.05" position="-2 -1 -5"></a-cylinder>
+ 	        <a-cylinder color="blue" height="2" radius="0.05"position="-3 -1 -5"></a-cylinder>
+ 	        <a-torus-knot color="orange" radius="1.2" position="-3 1 -5"></a-torus-knot>
+            <a-plane width="9" height="2" position="3 1 -9" srs="#plant"></a-plane>
+            <a-text value="Welcome to browser's VR" color="black" width="10" position="-0.5 1 -6"></a-text>
+                 </a-nft>
+
+ </a-scene>
+</html> 
