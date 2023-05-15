@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script src="../aframe/aframe.min.js"></script>
+<script src="../ar/aframe-ar-nft.js"></script>
+<script>  AFRAME.registerComponent('registerevents',{
+        init: function() {
+            var marker=this.el;
+            marker. addEventListener('markerFound', function() {
+                    console.log('markerFound', marker.id);
+                     
+                });
+                    marker.addEventListener ('markerLost', function() {
+                    console.log('markerLost', marker.id);
+                     
+                    });
+                }
+                    
+            });
+
+</script>
+
+
+
+</head>
+
+<body> 
+              <a-scene
+                vr-mode-ui="enabled: false;"
+                renderer="logarithmicDepthBuffer: true;"
+                embedded arjs="trackingMethod: best;">
+             
+
+                <a-nft emitevents
+                  type="nft"
+                  url="0022"
+                  smooth="true"
+                  smoothCount="10"
+                  smoothTolerance=".01"
+                  smoothThreshold="5">
+                  <a-torus color="#43A367" arc="270" radius="5" radius-tubular="0.1"></a-torus>
+             
+                </a-nft>
+                <a-entity camera></a-entity>
+              </a-scene>
+            </body>
+
+</html>>
