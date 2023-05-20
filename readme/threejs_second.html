@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title>My second  three.js app</title>
+		<style>
+			body { margin: 0; }
+			button#press{
+				position: absolute;
+				top:50%;
+				left:50%;
+				transform:translateX(-50%);
+			}
+		</style>
+		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+		<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three>/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three>/examples/jsm/"
+    }
+  }
+        </script>
+		<script type="module" src="code.js"></script>
+	</head>
+
+		
+<body>
+	<video
+		id="video" loop cross0rigin="anonymous" playsinline style="display:none" muted >
+		<source src="/assets/movie.mp4" type="mp4">
+	</video>
+
+
+
+	<video
+		id="video2" loop cross0rigin="anonymous" playsinline style="display:none" muted >
+		<source src="/assets/video.360.mp4" type="mp4">
+	</video>
+
+
+<button id="press">Натисни на мене</button>
+
+
+
+
+	</body>
+</html>
